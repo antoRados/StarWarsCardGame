@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EA1F275F2764125900CB0B86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F275E2764125900CB0B86 /* AppDelegate.swift */; };
 		EA1F27612764125900CB0B86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F27602764125900CB0B86 /* SceneDelegate.swift */; };
-		EA1F27632764125900CB0B86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F27622764125900CB0B86 /* ViewController.swift */; };
 		EA1F27662764125900CB0B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1F27642764125900CB0B86 /* Main.storyboard */; };
 		EA1F27682764126200CB0B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1F27672764126200CB0B86 /* Assets.xcassets */; };
 		EA1F276B2764126200CB0B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1F27692764126200CB0B86 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		EA1F275B2764125900CB0B86 /* StarWarsCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsCardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1F275E2764125900CB0B86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA1F27602764125900CB0B86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA1F27622764125900CB0B86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA1F27652764125900CB0B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA1F27672764126200CB0B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA1F276A2764126200CB0B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,62 @@
 		EA1F275D2764125900CB0B86 /* StarWarsCardGame */ = {
 			isa = PBXGroup;
 			children = (
-				EA1F275E2764125900CB0B86 /* AppDelegate.swift */,
-				EA1F27602764125900CB0B86 /* SceneDelegate.swift */,
-				EA1F27622764125900CB0B86 /* ViewController.swift */,
-				EA1F27642764125900CB0B86 /* Main.storyboard */,
-				EA1F27672764126200CB0B86 /* Assets.xcassets */,
-				EA1F27692764126200CB0B86 /* LaunchScreen.storyboard */,
-				EA1F276C2764126200CB0B86 /* Info.plist */,
+				EA1F27792764135600CB0B86 /* Controllers */,
+				EA1F27782764134F00CB0B86 /* Models */,
+				EA1F27772764133400CB0B86 /* Views */,
+				EA1F27742764130400CB0B86 /* Resources */,
 			);
 			path = StarWarsCardGame;
+			sourceTree = "<group>";
+		};
+		EA1F27742764130400CB0B86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA1F275E2764125900CB0B86 /* AppDelegate.swift */,
+				EA1F27602764125900CB0B86 /* SceneDelegate.swift */,
+				EA1F27672764126200CB0B86 /* Assets.xcassets */,
+				EA1F276C2764126200CB0B86 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA1F27772764133400CB0B86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA1F27642764125900CB0B86 /* Main.storyboard */,
+				EA1F27692764126200CB0B86 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA1F27782764134F00CB0B86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA1F27792764135600CB0B86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA1F277B2764136000CB0B86 /* Model Controllers */,
+				EA1F277A2764135900CB0B86 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA1F277A2764135900CB0B86 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EA1F277B2764136000CB0B86 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +182,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1F27632764125900CB0B86 /* ViewController.swift in Sources */,
 				EA1F275F2764125900CB0B86 /* AppDelegate.swift in Sources */,
 				EA1F27612764125900CB0B86 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6GV6CJ9JZ5;
-				INFOPLIST_FILE = StarWarsCardGame/Info.plist;
+				INFOPLIST_FILE = StarWarsCardGame/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6GV6CJ9JZ5;
-				INFOPLIST_FILE = StarWarsCardGame/Info.plist;
+				INFOPLIST_FILE = StarWarsCardGame/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
