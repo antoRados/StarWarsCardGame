@@ -1,12 +1,6 @@
-//
-//  CharacterController.swift
-//  StarWarsCardGame
-//
-//  Created by Anto Rados on 12/10/21.
-//
-
 import UIKit
 
+// a character controller class holding two arrays, which are populated by character instances divided into jedi and sith.
 class CharacterController {
     static let jedi = [Character(name: "Anakin Skywalker", photo: UIImage(named: "anakin"), faction: "Jedi"),
                        Character(name: "Obi Wan Kenobi", photo: UIImage(named: "obi"), faction: "Jedi"),

@@ -1,12 +1,6 @@
-//
-//  Character.swift
-//  StarWarsCardGame
-//
-//  Created by Anto Rados on 12/10/21.
-//
-
 import UIKit
 
+// a character class which holds a name string, photo uiimage, and faction string
 class Character {
     var name: String
     var photo: UIImage?
@@ -20,7 +14,7 @@ class Character {
     }  //End initializer
 } //End "Character" class
 
-
+// conforming to Equatable
 extension Character: Equatable {
     static func == (lhs: Character, rhs: Character) -> Bool {
         lhs.name == rhs.name && lhs.photo == rhs.photo && lhs.faction == rhs.faction
