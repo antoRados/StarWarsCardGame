@@ -7,6 +7,7 @@
 
 import UIKit
 
+// sets the settings for each cell.  assigns image and aspect ratio
 class CharacterCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var characterImageView: UIImageView!
@@ -15,5 +16,6 @@ class CharacterCollectionViewCell: UICollectionViewCell {
         characterImageView.image = character.photo
         characterImageView.contentMode = .scaleAspectFill
         characterImageView.clipsToBounds = true
+    
     }
-}
+}  //End of "CharacterCollectionViewCell" class

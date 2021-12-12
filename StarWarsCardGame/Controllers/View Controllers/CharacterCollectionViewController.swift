@@ -78,8 +78,13 @@ class CharacterCollectionViewController: UICollectionViewController {
     
     
     // MARK: - Navigation
+    
+    // segue from CharacterCollectionViewController to FilterViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "filterVC" {
+            let vc = segue.destination as? FilterViewController
+            vc?.delegate = self
+        }
     } //End "prepare" function
 
 
@@ -120,5 +125,14 @@ extension CharacterCollectionViewController: UICollectionViewDelegateFlowLayout 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = view.frame.width / 2
         return CGSize(width: width - 15, height: width + 30)
+    }
+} //End "CharacterCollectionViewController" extension
+
+
+// sets selected faction, reapplies selected faction based on filter selection, then shuffles characters within selected faction
+extension CharacterCollectionViewController: FilterSelectionDelegate {
+    func selected(faction: String) {
+        selectedFaction = faction
+        shuffleCharacters(for: selectedFaction)
     }
 } //End "CharacterCollectionViewController" extension

@@ -16,6 +16,7 @@
 		EA1F27812764279A00CB0B86 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F27802764279A00CB0B86 /* CharacterController.swift */; };
 		EA1F27932765401600CB0B86 /* CharacterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F27922765401600CB0B86 /* CharacterCollectionViewController.swift */; };
 		EA1F2796276550C600CB0B86 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F2795276550C600CB0B86 /* CharacterCollectionViewCell.swift */; };
+		EA1F279B2765A03B00CB0B86 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F279A2765A03B00CB0B86 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EA1F27802764279A00CB0B86 /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
 		EA1F27922765401600CB0B86 /* CharacterCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewController.swift; sourceTree = "<group>"; };
 		EA1F2795276550C600CB0B86 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterCollectionViewCell.swift; path = "StarWarsCardGame/Controllers/View Controllers/CharacterCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		EA1F279A2765A03B00CB0B86 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				EA1F27922765401600CB0B86 /* CharacterCollectionViewController.swift */,
 				EA1F2795276550C600CB0B86 /* CharacterCollectionViewCell.swift */,
+				EA1F279A2765A03B00CB0B86 /* FilterViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1F279B2765A03B00CB0B86 /* FilterViewController.swift in Sources */,
 				EA1F2796276550C600CB0B86 /* CharacterCollectionViewCell.swift in Sources */,
 				EA1F277D2764200F00CB0B86 /* Character.swift in Sources */,
 				EA1F27812764279A00CB0B86 /* CharacterController.swift in Sources */,
